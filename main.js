@@ -15,6 +15,7 @@ const printToDom = (domString, divId) => {
     document.getElementById(divId).innerHTML = domString;
 }
 
+//build domString here
 const buildDomString = (fancyArray) => {
     let domString = "";
     fancyArray.forEach((animals) => {
@@ -41,5 +42,5 @@ function executeThisCodeAfterFileIsLoaded () {
 
 
 
-//build domString here
+
 

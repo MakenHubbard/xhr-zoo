@@ -1,3 +1,13 @@
 body {
     background-color: greenyellow
 }
+
+#zoo {
+    display: flex;
+    flex-wrap: row wrap;
+}
+
+.animal {
+    width: 45%;
+    
+}
