@@ -1,0 +1,108 @@
+{
+    "animals": [
+        {
+            "name":"AFRICAN CLAWED FROG",
+            "type":"Amphibian",
+            "number": "45",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_african-clawed-frog-web.jpg"       
+        },
+        {
+            "name":"BLUE POISON ARROW FROG",
+            "type":"Amphibian",
+            "number": "2",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_frogs.jpg"       
+        },
+        {
+            "name":"HELLBENDER",
+            "type":"Amphibian",
+            "number": "32",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_hellbender-sm.jpg"       
+        },
+        {
+            "name":"BLUE-BILLED CURASSOW",
+            "type":"bird",
+            "number": "7",
+            "isCarnivore": "false",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_curassow-1.jpg"       
+        },
+        {
+            "name":"COMMON BARN OWL",
+            "type":"bird",
+            "number": "18",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_barnowl1-sq.jpg"       
+        },
+        {
+            "name":"MANDARIN DUCK",
+            "type":"bird",
+            "number": "69",
+            "isCarnivore": "false",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_mandarinduck1.jpg"       
+        },
+        {
+            "name":"ALLIGATOR SNAPPING TURTLE",
+            "type":"reptile",
+            "number": "124",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_alligator-snapping-turtle.jpg"       
+        },
+        {
+            "name":"EASTERN DIAMONDBACK RATTLESNAKE",
+            "type":"reptile",
+            "number": "14",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_eastern_diamondback.jpg"       
+        },
+        {
+            "name":"MEXICAN BEADED LIZARD",
+            "type":"reptile",
+            "number": "74",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/beaded-lizzard---sperka-web.jpg"       
+        },
+        {
+            "name":"ALPACA",
+            "type":"mammal",
+            "number": "54",
+            "isCarnivore": "false",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_alpaca1.jp" 
+        },
+        {
+            "name":"CLOUDED LEOPARD",
+            "type":"mammal",
+            "number": "23",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_cloudedleopard7.jpg" 
+        },
+        {
+            "name":"MEXICAN SPIDER MONKEY",
+            "type":"mammal",
+            "number": "7853",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_spider-monkey---2017---amiee-stubbs-28-web.jpg" 
+        },
+        {
+            "name":"BLACK AROWANA",
+            "type":"fish",
+            "number": "2",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_black-arowana-web.jpg" 
+        },
+        {
+            "name":"LINED SEAHORSE",
+            "type":"fish",
+            "number": "8",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_lined-seahorse.jpg" 
+        },
+        {
+            "name":"WHITE-BLOTCHED RIVER STINGRAY",
+            "type":"fish",
+            "number": "88",
+            "isCarnivore": "true",
+            "imageUrl":"https://www.nashvillezoo.org/assets/2147/12_white-blotched-stingray.jpg" 
+        }
+    ]}
