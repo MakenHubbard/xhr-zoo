@@ -18,7 +18,14 @@ const printToDom = (domString, divId) => {
 const buildDomString = (fancyArray) => {
     let domString = "";
     fancyArray.forEach((animals) => {
-        domString += `<h2>${animals.name}</h2>`;
+        domString += `<div class="animal">
+                        <h2>${animals.name}</h2>
+                        <h3>${animals.number}</h3>
+                        <img class="animal-image"src="${animals.imageUrl}" alt="animal" height="200px" width="250px">
+                        <div>
+                            <button>Escaped</button>
+                        </div>
+                     </div>`;
     })
     printToDom(domString, 'zoo');
 }
