@@ -13,22 +13,64 @@ startApplication();
 
 const printToDom = (domString, divId) => {
     document.getElementById(divId).innerHTML = domString;
+    addEscapedEventListeners();
 }
 
 const buildDomString = (fancyArray) => {
     let domString = "";
     fancyArray.forEach((animals) => {
-        domString += `<div class="animal">
-                        <h2>${animals.name}</h2>
+        if (animals.isCarnivore){
+            domString +=`<div class="animals carn">`;
+        } else {
+            domString += `<div class="animals veg">`;
+        }
+        domString += 
+                        `<h2>${animals.name}</h2>
                         <h3>${animals.number}</h3>
-                        <img class="animal-image"src="${animals.imageUrl}" alt="animal" height="200px" width="250px">
+                        <img class="animals-image"src="${animals.imageUrl}" alt="animal" height="200px" width="250px">
                         <div>
-                            <button>Escaped</button>
+                            <button class="escaped">Escaped</button>
                         </div>
                      </div>`;
     })
     printToDom(domString, 'zoo');
 }
+
+const addEscapedEventListeners = () => {
+    const escapedButtons = document.getElementsByClassName('escaped');
+    for (let i=0; i<escapedButtons.length; i++){
+        escapedButtons[i].addEventListener('click', animalEscaped);
+    }
+}
+
+
+const animalEscaped = () => { 
+    showCarnivores();
+    showVegetables();
+}
+
+const showCarnivores = () => {
+    const carnivores = document.getElementsByClassName('carn');
+    for (let j=0; j<carnivores.length; j++ ){
+        carnivores[j].children[3].innerHTML = '';
+        carnivores[j].classList.add("red");
+    }    
+};
+
+
+const showVegetables = () => {
+    const vegetables = document.getElementsByClassName('veg');
+    for (let h=0; h<vegetables.length; h++) {
+        vegetables[h].children[3].innerHTML = '<button>EAT ME !!!</button>';
+        vegetables[h].classList.add("green");
+    }
+};
+
+
+
+
+
+
 
 function executeThisCodeIfXHRFails () {
     console.log("error");
@@ -38,8 +80,3 @@ function executeThisCodeAfterFileIsLoaded () {
     const data = JSON.parse(this.responseText);
     buildDomString(data.animals);
 }
-
-
-
-//build domString here
-
